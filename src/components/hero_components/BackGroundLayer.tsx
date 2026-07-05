@@ -1,7 +1,8 @@
 export default function BackGroundLayer() {
   return (
     <section
-      className="relative min-h-screen overflow-hidden
+      id="BgLayer"
+      className="relative
 bg-[#090714]"
     ></section>
   );

@@ -1,0 +1,71 @@
+<svg width="320" height="210" viewBox="0 0 320 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lineGradient" x1="30" y1="170" x2="292" y2="34" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D5FF"/>
+      <stop offset="0.55" stop-color="#2E7BFF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="areaGradient" x1="160" y1="45" x2="160" y2="185" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E7BFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#00D5FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="blueGlow" x="-40" y="-40" width="400" height="290" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.05  0 0 0 0 0.45  0 0 0 0 1  0 0 0 0.9 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="dotGlow" x="-20" y="-20" width="50" height="50" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- soft background glow -->
+  <ellipse cx="174" cy="117" rx="145" ry="72" fill="#0B63FF" opacity="0.12"/>
+
+  <!-- subtle grid -->
+  <g opacity="0.12" stroke="#7DD3FC" stroke-width="1">
+    <path d="M28 180H295"/>
+    <path d="M28 140H295"/>
+    <path d="M28 100H295"/>
+    <path d="M28 60H295"/>
+    <path d="M60 30V180"/>
+    <path d="M120 30V180"/>
+    <path d="M180 30V180"/>
+    <path d="M240 30V180"/>
+  </g>
+
+  <!-- area under line -->
+  <path d="M32 164 L72 134 L111 142 L151 98 L190 118 L230 72 L285 36 L285 180 L32 180 Z" fill="url(#areaGradient)"/>
+
+  <!-- dark shadow line for comic depth -->
+  <path d="M32 164 L72 134 L111 142 L151 98 L190 118 L230 72 L285 36" stroke="#07111F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+
+  <!-- main glowing trend line -->
+  <path d="M32 164 L72 134 L111 142 L151 98 L190 118 L230 72 L285 36" stroke="url(#lineGradient)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blueGlow)"/>
+
+  <!-- white highlight -->
+  <path d="M32 160 L72 130 L111 138 L151 94 L190 114 L230 68 L285 32" stroke="#CFFAFE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+
+  <!-- points -->
+  <g filter="url(#dotGlow)">
+    <circle cx="32" cy="164" r="6" fill="#00D5FF" stroke="#DFFBFF" stroke-width="2"/>
+    <circle cx="72" cy="134" r="6" fill="#00B7FF" stroke="#DFFBFF" stroke-width="2"/>
+    <circle cx="111" cy="142" r="6" fill="#2E7BFF" stroke="#DFFBFF" stroke-width="2"/>
+    <circle cx="151" cy="98" r="6" fill="#3B82F6" stroke="#DFFBFF" stroke-width="2"/>
+    <circle cx="190" cy="118" r="6" fill="#2563EB" stroke="#DFFBFF" stroke-width="2"/>
+    <circle cx="230" cy="72" r="6" fill="#6366F1" stroke="#DFFBFF" stroke-width="2"/>
+  </g>
+
+  <!-- arrow head -->
+  <path d="M268 33 L288 34 L278 52" stroke="#8B5CF6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blueGlow)"/>
+</svg>

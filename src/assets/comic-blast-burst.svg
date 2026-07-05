@@ -1,0 +1,63 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="blastCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF9B8"/>
+      <stop offset="38%" stop-color="#FFE735"/>
+      <stop offset="72%" stop-color="#FF9D00"/>
+      <stop offset="100%" stop-color="#FF2D00"/>
+    </radialGradient>
+    <radialGradient id="innerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="48%" stop-color="#FFF35A" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 1  0 1 0 0 0.45  0 0 1 0 0  0 0 0 0.7 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+    <pattern id="halftone" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="4" fill="#fff" opacity="0.42"/>
+      <circle cx="21" cy="21" r="3" fill="#fff" opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <!-- black comic shadow / outline -->
+  <path d="M800 57 L845 265 L946 93 L935 296 L1097 146 L1036 340 L1246 263 L1106 414 L1396 378 L1160 517 L1492 557 L1160 602 L1394 733 L1102 697 L1255 878 L1030 761 L1101 994 L938 800 L932 1052 L836 831 L800 1087 L760 833 L654 1040 L668 800 L498 1002 L575 764 L341 889 L498 700 L206 737 L438 606 L101 559 L438 512 L213 380 L496 417 L345 253 L573 341 L497 104 L665 294 L654 65 L758 266 Z" fill="#070707"/>
+
+  <!-- red/orange outer blast -->
+  <path d="M800 76 L838 286 L936 122 L927 314 L1080 172 L1018 359 L1220 285 L1082 430 L1365 399 L1132 524 L1462 559 L1131 594 L1364 716 L1082 682 L1230 852 L1016 741 L1080 960 L925 778 L922 1018 L832 808 L800 1053 L764 810 L662 1010 L674 778 L516 965 L592 742 L372 859 L526 681 L245 717 L470 596 L133 559 L470 520 L248 399 L526 432 L373 284 L590 360 L518 136 L676 316 L670 100 L764 288 Z" fill="#F83400"/>
+
+  <!-- orange mid blast -->
+  <path d="M800 128 L832 316 L914 180 L911 342 L1040 221 L994 388 L1163 329 L1051 452 L1283 431 L1093 532 L1358 560 L1093 588 L1280 684 L1050 665 L1168 809 L988 709 L1038 887 L908 740 L905 936 L828 760 L800 981 L770 762 L682 930 L692 740 L560 900 L622 708 L442 808 L574 660 L343 688 L528 587 L250 560 L528 530 L342 433 L576 456 L444 328 L624 390 L563 203 L694 348 L692 164 L770 320 Z" fill="#FF8A00"/>
+
+  <!-- yellow inner blast -->
+  <path d="M800 178 L826 344 L892 240 L890 372 L998 270 L958 418 L1108 370 L1016 478 L1190 468 L1045 540 L1278 560 L1045 579 L1190 650 L1015 640 L1110 760 L955 679 L997 824 L888 704 L886 866 L822 720 L800 910 L774 724 L704 862 L710 704 L600 833 L654 680 L500 756 L608 630 L426 650 L575 580 L350 560 L575 538 L426 472 L610 493 L502 370 L654 422 L602 258 L713 374 L710 224 L774 348 Z" fill="url(#blastCore)"/>
+
+  <!-- core glow -->
+  <ellipse cx="800" cy="560" rx="335" ry="270" fill="url(#innerGlow)" filter="url(#softGlow)"/>
+  <ellipse cx="800" cy="560" rx="285" ry="230" fill="url(#halftone)" opacity="0.75"/>
+
+  <!-- comic speed cracks -->
+  <g stroke="#050505" stroke-width="5" stroke-linecap="round" opacity="0.85">
+    <path d="M548 509 L454 462"/>
+    <path d="M614 397 L574 333"/>
+    <path d="M711 310 L692 225"/>
+    <path d="M900 319 L930 231"/>
+    <path d="M1012 415 L1098 365"/>
+    <path d="M1072 545 L1202 520"/>
+    <path d="M1030 650 L1126 713"/>
+    <path d="M894 750 L930 850"/>
+    <path d="M692 742 L642 840"/>
+    <path d="M570 630 L455 675"/>
+  </g>
+
+  <!-- black ink speckles -->
+  <g fill="#050505" opacity="0.9">
+    <circle cx="438" cy="281" r="6"/><circle cx="471" cy="226" r="4"/><circle cx="514" cy="204" r="3"/>
+    <circle cx="1094" cy="231" r="5"/><circle cx="1148" cy="284" r="4"/><circle cx="1204" cy="316" r="3"/>
+    <circle cx="1330" cy="511" r="5"/><circle cx="1300" cy="624" r="4"/><circle cx="1250" cy="786" r="5"/>
+    <circle cx="409" cy="790" r="5"/><circle cx="346" cy="639" r="4"/><circle cx="304" cy="511" r="4"/>
+    <circle cx="690" cy="122" r="5"/><circle cx="930" cy="129" r="4"/><circle cx="802" cy="1004" r="5"/>
+  </g>
+</svg>

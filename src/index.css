@@ -1,1 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 @import "tailwindcss";
+body {
+  background-color: #090714;
+  color: white;
+  margin: 0;
+}
+
+@theme {
+  --font-space: "Space Grotesk", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-cartoon: "Bangers", sans-serif;
+}
+
+.text-stroke-black {
+  -webkit-text-stroke: 3px black;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 3px white;
+}
+
+.text-stroke-purple {
+  -webkit-text-stroke: 3px #4f46e5;
+}

@@ -1,0 +1,27 @@
+<svg width="1600" height="1050" viewBox="0 0 1600 1050" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Rounded comic speech bubble</title>
+  <path
+    d="M308 658
+       C170 650 74 560 82 446
+       C88 350 169 273 282 264
+       C302 187 391 134 501 133
+       C583 132 653 162 696 209
+       C755 118 894 69 1021 106
+       C1106 131 1163 183 1190 246
+       C1266 219 1365 236 1424 294
+       C1484 353 1491 426 1461 482
+       C1547 525 1582 608 1546 680
+       C1512 748 1435 787 1342 787
+       C1276 881 1135 930 988 901
+       C913 946 790 946 707 904
+       L322 1032
+       C295 1041 272 1013 286 988
+       L409 752
+       C363 727 329 696 308 658 Z"
+    fill="white"
+    stroke="black"
+    stroke-width="34"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+</svg>

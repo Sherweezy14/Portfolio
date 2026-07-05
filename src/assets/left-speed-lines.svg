@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" width="1600" height="520" role="img" aria-label="Transparent comic radial speed lines overlay">
+  <defs>
+    <filter id="roughen" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="8" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <radialGradient id="fade" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.95"/>
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#roughen)" fill="#050505" opacity="0.92">
+    <!-- left burst lines -->
+<path d="M0 70 L1120 340 L0 110 Z"/>
+<path d="M0 145 L1070 390 L0 170 Z" opacity=".85"/>
+<path d="M0 225 L1170 430 L0 246 Z"/>
+<path d="M0 302 L1140 480 L0 332 Z"/>
+<path d="M0 420 L1200 560 L0 470 Z" opacity=".9"/>
+
+<path d="M170 10 L1250 390 L210 28 Z" opacity=".8"/>
+<path d="M330 0 L1360 365 L375 12 Z"/>
+
+<path d="M415 520 L1390 640 L460 520 Z"/>
+<path d="M260 520 L1270 615 L315 520 Z" opacity=".75"/>
+
+<path d="M0 12 L1240 360 L0 32 Z" opacity=".55"/>
+<path d="M0 500 L1280 650 L0 520 Z" opacity=".55"/>
+
+   
+
+   </g>
+
+  <!-- ink specks -->
+  <g fill="#050505" opacity="0.75">
+    <circle cx="340" cy="115" r="4"/><circle cx="420" cy="180" r="3"/><circle cx="505" cy="245" r="2"/>
+    <circle cx="625" cy="118" r="3"/><circle cx="690" cy="85" r="2"/><circle cx="760" cy="146" r="2.5"/>
+    <circle cx="840" cy="103" r="3"/><circle cx="920" cy="130" r="2"/><circle cx="1030" cy="185" r="3"/>
+    <circle cx="1160" cy="115" r="4"/><circle cx="1240" cy="205" r="2.5"/><circle cx="1325" cy="315" r="3"/>
+    <circle cx="405" cy="330" r="3"/><circle cx="545" cy="385" r="2.5"/><circle cx="720" cy="430" r="3"/>
+    <circle cx="895" cy="398" r="2.5"/><circle cx="1035" cy="350" r="3"/><circle cx="1185" cy="390" r="2"/>
+    <circle cx="270" cy="262" r="3"/><circle cx="1470" cy="262" r="3"/>
+  </g>
+
+  <!-- subtle transparent gray edge fade; remove if you want pure black-only artwork -->
+  <rect width="1600" height="520" fill="url(#fade)" opacity="0.18"/>
+</svg>

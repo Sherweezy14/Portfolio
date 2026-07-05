@@ -1,0 +1,87 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    
+    <linearGradient id="cloudMain" x1="200" y1="170" x2="1360" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E9FFFF"/>
+      <stop offset="0.25" stop-color="#93D9FF"/>
+      <stop offset="0.48" stop-color="#7C6DFF"/>
+      <stop offset="0.68" stop-color="#0B73FF"/>
+      <stop offset="1" stop-color="#32118A"/>
+    </linearGradient>
+    <linearGradient id="cloudLight" x1="370" y1="230" x2="940" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2FFFF" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#B6ECFF" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#5FA8FF" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="cloudBlue" x1="850" y1="310" x2="1410" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#75DCFF"/>
+      <stop offset="0.45" stop-color="#136FFF"/>
+      <stop offset="1" stop-color="#24116E"/>
+    </linearGradient>
+    <linearGradient id="cloudPurple" x1="40" y1="550" x2="720" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9A9FF"/>
+      <stop offset="0.45" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#225BFF"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="28" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.25 0 0 0 0 0.75 0 0 0 0 1 0 0 0 0.75 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+    <pattern id="dotsBlue" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="5" fill="#012BCE" opacity="0.36"/>
+    </pattern>
+    <pattern id="dotsWhite" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="4" fill="#FFFFFF" opacity="0.44"/>
+    </pattern>
+    <clipPath id="cloudClip">
+      <path d="M35 720C62 642 132 609 214 618C216 548 276 504 344 515C355 420 433 360 525 379C556 266 653 190 770 214C837 228 889 270 920 323C956 291 1006 280 1052 298C1099 316 1130 353 1141 402C1175 380 1225 381 1263 405C1301 430 1323 465 1326 510C1388 496 1455 527 1488 582C1538 586 1579 624 1591 675C1604 733 1562 772 1500 775H109C60 775 19 761 35 720Z"/>
+    </clipPath>
+  </defs>
+
+  <g opacity="0.9">
+    <ellipse cx="790" cy="390" rx="745" ry="365" fill="url(#glowTop)" filter="url(#softGlow)"/>
+    <ellipse cx="230" cy="675" rx="460" ry="250" fill="url(#glowLeft)" filter="url(#softGlow)"/>
+  </g>
+
+  <g clip-path="url(#cloudClip)">
+    <path d="M35 720C62 642 132 609 214 618C216 548 276 504 344 515C355 420 433 360 525 379C556 266 653 190 770 214C837 228 889 270 920 323C956 291 1006 280 1052 298C1099 316 1130 353 1141 402C1175 380 1225 381 1263 405C1301 430 1323 465 1326 510C1388 496 1455 527 1488 582C1538 586 1579 624 1591 675C1604 733 1562 772 1500 775H109C60 775 19 761 35 720Z" fill="url(#cloudMain)" opacity="0.92"/>
+
+    <circle cx="540" cy="370" r="210" fill="url(#cloudLight)" opacity="0.92"/>
+    <circle cx="330" cy="510" r="130" fill="#C8F5FF" opacity="0.75"/>
+    <circle cx="455" cy="565" r="135" fill="#BB8BFF" opacity="0.85"/>
+    <circle cx="620" cy="555" r="126" fill="#9D6DFF" opacity="0.78"/>
+    <circle cx="740" cy="460" r="150" fill="#91DFFF" opacity="0.66"/>
+    <circle cx="870" cy="480" r="110" fill="#438EFF" opacity="0.72"/>
+    <circle cx="1070" cy="510" r="160" fill="url(#cloudBlue)" opacity="0.95"/>
+    <circle cx="1260" cy="500" r="145" fill="#37BFFF" opacity="0.78"/>
+    <circle cx="1365" cy="610" r="145" fill="#244BE4" opacity="0.82"/>
+    <circle cx="1200" cy="690" r="118" fill="#32118A" opacity="0.85"/>
+    <circle cx="1010" cy="682" r="145" fill="#0D5CFF" opacity="0.75"/>
+    <circle cx="820" cy="700" r="120" fill="#2C7DFF" opacity="0.76"/>
+    <circle cx="645" cy="698" r="96" fill="#83CAFF" opacity="0.86"/>
+    <circle cx="525" cy="704" r="82" fill="#B3E6FF" opacity="0.82"/>
+    <circle cx="270" cy="690" r="118" fill="url(#cloudPurple)" opacity="0.93"/>
+    <circle cx="125" cy="695" r="86" fill="#B46CFF" opacity="0.80"/>
+
+    <path d="M350 225C430 180 568 178 650 256C702 306 708 365 706 399C660 337 568 326 512 376C474 317 415 286 350 302C318 286 315 252 350 225Z" fill="#F4FFFF" opacity="0.62"/>
+    <path d="M816 337C861 290 953 296 997 355C1040 330 1124 351 1160 415C1078 385 1018 407 977 468C931 417 867 405 800 433C794 392 798 359 816 337Z" fill="#C9F2FF" opacity="0.58"/>
+    <path d="M1130 532C1198 487 1294 508 1338 582C1378 560 1457 574 1494 640C1408 625 1348 648 1300 710C1254 645 1186 627 1110 654C1106 604 1111 562 1130 532Z" fill="#8DDCFF" opacity="0.45"/>
+
+    <rect x="0" y="0" width="900" height="760" fill="url(#dotsWhite)" opacity="0.42"/>
+    <rect x="250" y="455" width="1200" height="380" fill="url(#dotsBlue)" opacity="0.42"/>
+    <rect x="0" y="560" width="520" height="240" fill="url(#dotsBlue)" opacity="0.5"/>
+    <rect x="1120" y="560" width="450" height="250" fill="url(#dotsBlue)" opacity="0.55"/>
+  </g>
+
+  <g opacity="0.9">
+    <path d="M760 675L776 713L814 729L776 745L760 783L744 745L706 729L744 713L760 675Z" fill="#E6FFFF"/>
+    <path d="M960 635L971 662L998 673L971 684L960 711L949 684L922 673L949 662L960 635Z" fill="#C8F7FF"/>
+    <path d="M1262 570L1273 596L1300 607L1273 618L1262 645L1251 618L1225 607L1251 596L1262 570Z" fill="#D5F9FF"/>
+    <path d="M330 275L342 303L370 315L342 327L330 355L318 327L290 315L318 303L330 275Z" fill="#BFF7FF" opacity="0.65"/>
+    <circle cx="162" cy="607" r="10" fill="#7C5CFF" opacity="0.85"/>
+    <circle cx="196" cy="677" r="9" fill="#55BFFF" opacity="0.45"/>
+    <circle cx="1320" cy="365" r="7" fill="#8B5CF6" opacity="0.9"/>
+    <circle cx="880" cy="330" r="4" fill="#55D6FF" opacity="0.6"/>
+  </g>
+</svg>
