@@ -1,4 +1,6 @@
-import logo from "../../assets/logo_sc.png";
+import logo1 from "../../assets/sc-navbar-comic-logo (1).svg";
+import { Menu } from "lucide-react";
+
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -27,14 +29,14 @@ export default function Navbar() {
 
   return (
     <nav
-      className="flex justify-between inset-0 z-50 absolute items-center  px-6 h-16 bg-gradient-to-l
+      className="flex justify-between inset-0 z-50 absolute items-center  px-6 h-16 bg-black lg:bg-transparent md:bg-gradient-to-l
     from-black/90
     via-black/70
     to-transparent
     backdrop-blur-sm"
     >
-      <img src={logo} alt="" className="h-32" />
-      <div className="flex gap-15 text-sm">
+      <img src={logo1} alt="" className=" h-12 lg:h-16" />
+      <div className="hidden lg:flex gap-15 text-sm">
         {links.map((link) => (
           <Link
             className="group cursor-pointer relative text-white font-medium"
@@ -59,10 +61,11 @@ group-hover:left-0
           </Link>
         ))}
       </div>
-      <button className="bg-yellow-500 shadow-2xl shadow-amber-200 cursor-pointer rounded-sm text-[.6rem]  text-black font-bold tracking-wide text-center px-2 py-1">
-        {" "}
-        Let's Connect{" "}
+      <button className="hidden lg:block bg-yellow-500 shadow-2xl shadow-amber-200 cursor-pointer rounded-sm text-[.6rem]  text-black font-bold tracking-wide text-center px-2 py-1">
+        Let's Connect
       </button>
+      <Menu size={28} className="md:hidden" strokeWidth={2} />
+      <div className="hidden lg:block"></div>
     </nav>
   );
 }

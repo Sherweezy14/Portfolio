@@ -1,0 +1,68 @@
+<svg width="240" height="170" viewBox="0 0 240 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="7" dy="9" stdDeviation="0" flood-color="#000000" flood-opacity="1"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#000000" flood-opacity=".8"/>
+    </filter>
+    <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-12)">
+      <circle cx="2" cy="2" r="1.35" fill="#d9a700" opacity=".45"/>
+    </pattern>
+  </defs>
+
+  <!-- transparent background -->
+
+  <!-- S -->
+  <g transform="translate(14 20)  " filter="url(#shadow)">
+    <text x="10" y="105"
+      font-family="Impact, Anton, Arial Black, sans-serif"
+      font-size="108"
+      font-weight="900"
+      letter-spacing="-10"
+      fill="#ffffff"
+      stroke="#000000"
+      stroke-width="16"
+      stroke-linejoin="round"
+      paint-order="stroke fill">S</text>
+    <text x="10" y="105"
+      font-family="Impact, Anton, Arial Black, sans-serif"
+      font-size="108"
+      font-weight="900"
+      letter-spacing="-10"
+      fill="#ffffff"
+      stroke="#ffffff"
+      stroke-width="2"
+      stroke-linejoin="round"
+      paint-order="stroke fill">S</text>
+  </g>
+
+  <!-- C -->
+  <g transform="translate(88 24)  " filter="url(#shadow)">
+    <text x="0" y="100"
+      font-family="Impact, Anton, Arial Black, sans-serif"
+      font-size="108"
+      font-weight="900"
+      letter-spacing="-8"
+      fill="#ffc400"
+      stroke="#000000"
+      stroke-width="16"
+      stroke-linejoin="round"
+      paint-order="stroke fill">C</text>
+    <text x="0" y="100"
+      font-family="Impact, Anton, Arial Black, sans-serif"
+      font-size="108"
+      font-weight="900"
+      letter-spacing="-8"
+      fill="#ffc400"
+      stroke="#ffd84d"
+      stroke-width="2"
+      stroke-linejoin="round"
+      paint-order="stroke fill">C</text>
+    <text x="0" y="100"
+      font-family="Impact, Anton, Arial Black, sans-serif"
+      font-size="108"
+      font-weight="900"
+      letter-spacing="-8"
+      fill="url(#dots)"
+      opacity=".6">C</text>
+  </g>
+</svg>
