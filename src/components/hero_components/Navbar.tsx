@@ -36,7 +36,7 @@ export default function Navbar() {
     backdrop-blur-sm"
     >
       <img src={logo1} alt="" className=" h-12 lg:h-16" />
-      <div className="hidden lg:flex gap-15 text-sm">
+      <div className="hidden  gap-15 text-sm">
         {links.map((link) => (
           <Link
             className="group cursor-pointer relative text-white font-medium"
@@ -61,9 +61,10 @@ group-hover:left-0
           </Link>
         ))}
       </div>
-      <button
-        className="
-    hidden lg:flex group
+      <a href="mailto:sherwyn@unityeventhall.com?subject=Let's%20Work%20Together&body=Hi%20Sherwyn,%0A%0AI'd%20like%20to%20discuss...">
+        <button
+          className="
+    flex group
     items-center gap-2
 
     px-5 py-1
@@ -93,20 +94,21 @@ group-hover:left-0
     transition-all
     duration-150
   "
-      >
-        Let's Connect
-        <Zap
-          size={16}
-          className="
+        >
+          Let's Connect
+          <Zap
+            size={16}
+            className="
     transition-all
     duration-200
     group-hover:rotate-12
     group-hover:scale-110
 "
-          strokeWidth={2.5}
-        />
-      </button>
-      <Menu size={28} className="lg:hidden" strokeWidth={2} />
+            strokeWidth={2.5}
+          />
+        </button>
+      </a>
+      <Menu size={28} className="hidden lg:hidden" strokeWidth={2} />
     </nav>
   );
 }

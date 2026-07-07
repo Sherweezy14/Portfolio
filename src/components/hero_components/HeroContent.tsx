@@ -59,22 +59,37 @@ export default function HeroContent() {
             help businesses grow.
           </p>
           <div className="flex flex-row justify-center md:justify-start items-center gap-2 lg:mt-2 md:mt-2 mt-28 md:gap-4">
-            <button className="flex items-center gap-2 bg-yellow-500 p-2 my-1 md:ml-1 rounded-md tracking-wider font-bold text-sm md:text-xs text-black">
-              View My Work <ArrowRight size={14} />
-            </button>
-
-            <SectionCard>
-              <p className="m-2 flex gap-2  text-sm lg:text-xs">
-                <p>Download Resume </p>
-                <Download className="hidden md:block" size={14} />{" "}
-              </p>
-            </SectionCard>
+            <a
+              href="https://tournament-manager-chi-taupe.vercel.app/"
+              target="new"
+            >
+              <button className="flex items-center cursor-pointer gap-2 bg-yellow-500 p-2 my-1 md:ml-1 rounded-md tracking-wider font-bold text-sm md:text-xs text-black">
+                View My Work <ArrowRight size={14} />
+              </button>
+            </a>
+            <a href="../../public/resume.pdf" download>
+              <SectionCard>
+                <p className="m-2 flex gap-2  text-sm lg:text-xs">
+                  <p>Download Resume </p>
+                  <Download className="hidden md:block" size={14} />{" "}
+                </p>
+              </SectionCard>
+            </a>
           </div>
 
           <div className="flex gap-4 justify-center md:justify-start  items-center mt-1">
-            <img src={Github} className="w-8 h-auto" alt="" />
-            <img src={linkedin} className="w-6 h-auto" alt="" />
-            <Mail size={29} />
+            <a href="https://github.com/Sherweezy14" target="new">
+              <img src={Github} className="w-8 h-auto" alt="" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sherwyn-cooper-3193b234/"
+              target="new"
+            >
+              <img src={linkedin} className="w-6 h-auto" alt="" />{" "}
+            </a>
+            <a href="mailto:sherwyn@unityeventhall.com?subject=Let's%20Work%20Together&body=Hi%20Sherwyn,%0A%0AI'd%20like%20to%20discuss...">
+              <Mail size={29} />{" "}
+            </a>
           </div>
         </div>
       </div>

@@ -21,15 +21,25 @@ export default function Featured() {
             <p className="text-center md:text-left text-sm md:text-xs tracking-widest font-bold text-red-500">
               React - TypeScript - Supabase - PostgresSQL
             </p>
-            <p className=" hidden text-sm md:flex items-center gap-1 text-amber-500">
-              View Case Study <ArrowRight size={16} />
-            </p>
+            <a
+              href="https://tournament-manager-chi-taupe.vercel.app/"
+              target="new"
+            >
+              <p className=" hidden text-sm md:flex items-center gap-1 text-amber-500">
+                View Site <ArrowRight size={16} />
+              </p>
+            </a>
           </div>
           <div className=" flex md:w-[400px] flex-col md:flex-row items-center rounded-md  md:pl-4">
-            <img src={tourney_ss} className="my-2 rounded-md " alt="" />
-            <p className=" text-sm flex md:hidden items-center gap-1 text-amber-500">
-              View Case Study <ArrowRight size={16} />
-            </p>
+            <a
+              href="https://tournament-manager-chi-taupe.vercel.app/"
+              target="new"
+            >
+              <img src={tourney_ss} className="my-2 rounded-md " alt="" />
+              <p className=" text-sm flex md:hidden items-center gap-1 text-amber-500">
+                View Site <ArrowRight size={16} />
+              </p>
+            </a>
           </div>
         </div>
       </SectionCard>

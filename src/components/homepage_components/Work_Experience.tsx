@@ -19,7 +19,7 @@ export default function WorkHighlight() {
             Built digital prescence, manage events, and drive
           </p>
           <p className="mb-1 -mt-1">revenue through technology and marketing</p>
-          <p className="flex text-base items-center tracking-wide gap-1 text-blue-700">
+          <p className=" hidden flex text-base items-center tracking-wide gap-1 text-blue-700">
             View Full Experience <ArrowRight size={16} />
           </p>
         </div>

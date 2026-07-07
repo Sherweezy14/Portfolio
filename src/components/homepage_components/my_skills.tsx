@@ -39,7 +39,7 @@ export default function MySkills() {
               <p className="md:hidden lg:block"> PostgresSQL</p>
             </div>
           </div>
-          <p className="flex text-sm items-center justify-center pt-3 gap-1 text-amber-500">
+          <p className="hidden flex text-sm items-center justify-center pt-3 gap-1 text-amber-500">
             View All Skills <ArrowRight size={16} />
           </p>
         </div>
