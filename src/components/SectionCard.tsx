@@ -1,4 +1,4 @@
-export default function SectionCard({ children }) {
+export default function SectionCard({ children }: any) {
   return (
     <div
       className="
