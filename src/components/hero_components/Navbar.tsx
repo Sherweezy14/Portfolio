@@ -1,5 +1,5 @@
 import logo1 from "../../assets/sc-navbar-comic-logo (1).svg";
-import { Menu } from "lucide-react";
+import { Menu, Zap } from "lucide-react";
 
 import { Link } from "react-router-dom";
 
@@ -61,11 +61,52 @@ group-hover:left-0
           </Link>
         ))}
       </div>
-      <button className="hidden lg:block bg-yellow-500 shadow-2xl shadow-amber-200 cursor-pointer rounded-sm text-[.6rem]  text-black font-bold tracking-wide text-center px-2 py-1">
+      <button
+        className="
+    hidden lg:flex group
+    items-center gap-2
+
+    px-5 py-1
+
+    bg-[#FFC928]
+
+    text-black
+    font-space
+    font-bold
+    tracking-wide
+
+    border-[3px]
+    border-black
+
+    rounded-md
+
+    shadow-[5px_5px_0px_#000]
+
+    hover:-translate-x-[2px]
+    hover:-translate-y-[2px]
+    hover:shadow-[7px_7px_0px_#000]
+
+    active:translate-x-[2px]
+    active:translate-y-[2px]
+    active:shadow-[2px_2px_0px_#000]
+
+    transition-all
+    duration-150
+  "
+      >
         Let's Connect
+        <Zap
+          size={16}
+          className="
+    transition-all
+    duration-200
+    group-hover:rotate-12
+    group-hover:scale-110
+"
+          strokeWidth={2.5}
+        />
       </button>
-      <Menu size={28} className="md:hidden" strokeWidth={2} />
-      <div className="hidden lg:block"></div>
+      <Menu size={28} className="lg:hidden" strokeWidth={2} />
     </nav>
   );
 }

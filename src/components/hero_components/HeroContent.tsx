@@ -42,28 +42,24 @@ export default function HeroContent() {
         className="-z-10 absolute -bottom-20 -right-20 -rotate-3 w-80 h-auto"
         alt=""
       />
-      <img
-        src={blast}
-        className="-z-10 absolute   top-30  md:top-8 md:right-[5.5rem] right-2 w-[25rem] md:w-[45rem] h-auto"
-        alt=""
-      />
+
       <div
         id="content-left"
-        className="flex flex-col md:justify-end  relative md:w-100 pl-0 lg:pl-10 pt-15 lg:pt-20 lg:px-0"
+        className="flex flex-col items-center md:items-start lg:justify-end  relative md:w-100 pl-0 lg:pl-10 pt-15 lg:pt-20 lg:px-0"
       >
         <img
           src={heroLogo}
-          className="h-auto w-64 lg:w-96 lg:absolute  lg:top-12"
+          className="h-auto w-64   md:w-80  lg:w-96 lg:absolute  lg:top-12"
           alt=""
         />
 
         <div className=" font-inner top-68 px-1 lg:pl-12 text-base tracking-wide">
-          <p className="hidden lg:block">
+          <p className="hidden w-70 ml-2 md:block">
             I build scalable web applications, powerful digital experiences, and
             help businesses grow.
           </p>
-          <div className="flex flex-row  items-center gap-2 mt-28 md:mt-2 md:gap-4">
-            <button className="flex items-center gap-2 bg-yellow-500 p-2 my-1 rounded-md tracking-wider font-bold text-sm lg:text-xs text-black">
+          <div className="flex flex-row justify-center md:justify-start items-center gap-2 lg:mt-2 md:mt-2 mt-28 md:gap-4">
+            <button className="flex items-center gap-2 bg-yellow-500 p-2 my-1 md:ml-1 rounded-md tracking-wider font-bold text-sm md:text-xs text-black">
               View My Work <ArrowRight size={14} />
             </button>
 
@@ -75,44 +71,53 @@ export default function HeroContent() {
             </SectionCard>
           </div>
 
-          <div className="flex gap-4  items-center mt-1">
+          <div className="flex gap-4 justify-center md:justify-start  items-center mt-1">
             <img src={Github} className="w-8 h-auto" alt="" />
             <img src={linkedin} className="w-6 h-auto" alt="" />
             <Mail size={29} />
           </div>
         </div>
       </div>
-      <div
-        id="content-right"
-        className="absolute top-32 right-15  -z-5 md:static flex flex-col md:flex-row items-end"
-      >
-        <div id="sherwyn-image" className="">
-          <img src={sherwynImg} className=" h-100 lg:z-20" alt="" />
-        </div>
-        <div
-          id="sherwyn-image-buttons"
-          className="flex flex-col h-full justify-between pr-6 pt-20 pb-12"
-        >
-          <div className=" hidden md:block text-center md:relative">
-            <img src={bubble} alt="" className="w-52 h-auto " />
-            <p className="absolute  font-space inset-0 md:inset-7 z-10 text-black">
-              <span className="text-5xl  tracking-tight font-space text-purple-950 font-bold">
-                8 +
-              </span>
-              <br />
-              <p className=" absolute inset-10  font-inter -rotate-2">
-                yrs of experience
+
+      <div className=" absolute -z-10 -translate-x-1/2 w-[320px] md:w-[640px] md:left-3/4 left-1/2 top-30 md:top-10">
+        <img
+          src={blast}
+          className=" absolute -z-8  w-[320px] md:w-[640px]  md:top-0 md:right-25 "
+          alt=""
+        />
+        <img
+          src={sherwynImg}
+          className=" absoulute w-[320px] md:w-[400px]   -z-9"
+          alt=""
+        />
+        <div className="absolute top-20 right-2 lg:right-[18%]  md:right-[23%] md:top-80">
+          <SectionCard>
+            <div className="flex gap-3 m-2 items-center text-xs">
+              <p className="bg-green-500 p-1 rounded-full"></p>
+              <p className="font-space">
+                Available <span className="hidden md:inline-block"> for</span>
+                <span className="hidden md:block"> opportunities</span>{" "}
               </p>
+            </div>
+          </SectionCard>
+        </div>
+      </div>
+
+      <div
+        id="sherwyn-image-buttons"
+        className="flex flex-col h-full justify-between pr-6 pt-20 pb-12"
+      >
+        <div className=" hidden md:block text-center md:relative">
+          <img src={bubble} alt="" className="w-52 h-auto " />
+          <p className="absolute  font-space inset-0 md:inset-7 z-10 text-black">
+            <span className="text-5xl  tracking-tight font-space text-purple-950 font-bold">
+              8 +
+            </span>
+            <br />
+            <p className=" absolute inset-10  font-inter -rotate-2">
+              yrs of experience
             </p>
-          </div>
-          <div className="absolute top-20 -right-14 w-30  md:static">
-            <SectionCard>
-              <div className="flex gap-3 m-2 items-center text-xs">
-                <p className="bg-green-500 p-1 rounded-full"></p>
-                <p className="font-space">Available for opportunities</p>
-              </div>
-            </SectionCard>
-          </div>
+          </p>
         </div>
       </div>
     </div>
