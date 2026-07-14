@@ -67,7 +67,7 @@ export default function HeroContent() {
                 View My Work <ArrowRight size={14} />
               </button>
             </a>
-            <a href="../../public/resume.pdf" download>
+            <a href="../../public/resume_new.pdf" download>
               <SectionCard>
                 <p className="m-2 flex gap-2  text-sm lg:text-xs">
                   <p>Download Resume </p>
